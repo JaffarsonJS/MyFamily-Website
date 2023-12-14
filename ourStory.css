@@ -1,0 +1,453 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html,body
+{
+    width: 100%;
+}
+
+/* Navbar Starts */
+
+nav
+{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 128px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0%;
+    box-shadow: 0px 2px 15px rgba(36, 50, 93, 0.06);
+}
+nav .logo a
+{
+    text-decoration: none;
+    color: #24325d;
+    font-size: 30px;
+    font-weight: 600;
+}
+nav .navList ul.nav
+{
+    /* border: 2px solid black; */
+    display: flex;
+    list-style: none;
+}
+nav .navList .nav > li
+{
+    /* border: 2px solid green; */
+    margin-left: 44px;
+    color: black;
+    position: relative;
+}
+
+
+/* Drop Down Starts */
+.drop
+{
+    position: absolute;
+}
+ul.drop
+{
+    /* border: 2px solid black; */
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    opacity: 0;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+/* .navList .d a[href="./dropDown.html"]:hover .drop */
+/* .fa i .fa:hover .drop */
+.d:hover .drop
+{
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+}
+
+ul.drop li
+{
+    margin: 16px 4px;
+}
+
+
+
+.drop .submenu
+{
+    /* border: 2px solid black; */
+    position: absolute;
+    /* left: 112%; */
+    left: 0;
+    top: 28px;
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    /* height: 0; */
+    /* width: 0; */
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    opacity: 0;
+    height: 225px;
+    left: 112%;
+}
+.dd:hover .submenu
+{
+    width: 200px;
+    opacity: 1;
+}
+/* .submenu li:hover .submenu
+{
+    left: 112%;
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+} */
+
+
+
+
+/* Drop Down Ends */
+
+
+
+
+
+
+
+
+
+
+
+nav .navList li i
+{
+    margin-left: 5px;
+}
+nav .navList li .home
+{
+    color: #006fbe;
+}
+
+nav .navList li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav .navList li a:hover
+{
+    color: #006fbe;
+}
+
+/* Navbar Ends */
+
+
+/* Header Starts */
+header
+{
+    margin: 77px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fb;
+    padding: 20px;
+}
+header h2
+{
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 7px;
+}
+header .insideHeader
+{
+    margin-right: 100px;
+    display: flex;
+    margin-top: 14px;
+}
+header .insideHeader a
+{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #006fbe;
+}
+/* Header Ends */
+
+/* Section 1 starts */
+.sec1
+{
+    /* border: 2px solid red; */
+    margin: -26px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec1 .div1
+{
+    width: 48%;
+    margin-right: 20px;
+    line-height: 25px;
+}
+.sec1 .div1 h3
+{
+    font-weight: 600;
+    font-size: 26px;
+}
+.sec1 .div1 .title
+{
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sec1 .div1 ul
+{
+    list-style: none;
+}
+.sec1 .div1 ul li
+{
+    margin: 23px 5px;
+}
+.sec1 .div2
+{
+    width: 48%;
+}
+.sec1 .div2 img
+{
+    width: 100%;
+}
+/* Section 1 Ends */
+
+/* Section 2 Starts */
+.sec2
+{
+    /* border: 2px solid red; */
+    margin: 130px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec2 .div1
+{
+    width: 48%;
+}
+.sec2 .div1 img
+{
+    width: 100%;
+}
+.sec2 .div2
+{
+    width: 48%;
+}
+.sec2 .div2 h3
+{
+    font-weight: 600;
+    font-size: 26px;
+}
+.sec2 .div2 p
+{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.sec2 .div2 ul
+{
+    list-style: none;
+}
+.sec2 .div2 li
+{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec2 .div2 li i
+{
+    color: #006fbe;
+    font-size: small;
+    margin-right: 10px;
+}
+/* Section 2 Ends */
+
+/* Section 3 Starts */
+.sec3
+{
+    margin: 130px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec3 .div1
+{
+    width: 48%;    
+}
+.sec3 .div1 h3
+{
+    font-weight: 600;
+    font-size: 26px; 
+}
+.sec3 .div1 .para1
+{
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sec3 .div1 .para2
+{
+    line-height: 22px;
+}
+.sec3 .div2
+{
+    width: 48%;
+}
+.sec3 .div2 img
+{
+    width: 100%;
+}
+
+/* Section 3 Ends */
+
+/* Row Images Starts */
+.rowImages
+{
+    /* border: 2px solid red; */
+    margin: 130px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.rowImages .rowImageInnerDiv 
+{
+    height: 644px;
+    width: 30%;
+    position: relative;
+    /* z-index: -1; */
+}
+.rowImages .rowImageInnerDiv img
+{
+    /* display: inline-block; */
+    width: 100%;
+}
+
+.rowImages .rowImageInnerDiv .rowImageIcons
+{
+    transition: height 0.4s;
+    background-color: rgba(0, 111, 190, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    
+    visibility: hidden;
+    height: 0%;
+    width: 100%;
+
+    position: absolute;
+}
+.rowImages .rowImageInnerDiv .rowImageIcons i
+{
+    margin-left: 26px;
+}
+.rowImages .rowImageInnerDiv:hover .rowImageIcons
+{
+    /* background-color: red; */
+    height: 40px;
+    width: 100%;
+    bottom: 249px;
+    visibility: visible;
+}
+.rowImages .rowImageInnerDiv h4
+{
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+}
+.rowImages .rowImageInnerDiv span
+{
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #006fbe;
+}
+.rowImages .rowImageInnerDiv p
+{
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+}
+/* Row Images Ends */
+
+/* Footer Starts */
+footer
+{
+    background-color: #24325d;
+    color: white;
+    height: 300px;
+    text-align: center;
+    padding: 30px ;
+}
+footer h3
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+footer .footerTitle
+{
+    font-style: italic;
+    margin-top: 19px;
+    margin-bottom: 41px;
+}
+footer .socialMediaIcons a
+{
+    background-color: #006fbe;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 3px;
+    display: inline-block;
+}
+footer .socialMediaIcons i
+{
+    color: white;
+}
+footer .copyright
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+footer .by a
+{
+    text-decoration: none;
+    color: #006fbe;
+}
+/* Footer Ends */
+
+/* Go to Top Button Code Starts */
+.gTop
+{
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    z-index: 996;
+    background: #006fbe;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s;
+    scroll-behavior: smooth;
+}
+.gTop i
+{
+    color: white;
+}
+/* Go to Top Button Code Ends */

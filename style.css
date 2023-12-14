@@ -1,0 +1,471 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+}
+
+/* Navbar Starts */
+
+nav
+{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 128px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0%;
+    box-shadow: 0px 2px 15px rgba(36, 50, 93, 0.06);
+}
+nav .logo a
+{
+    text-decoration: none;
+    color: #24325d;
+    font-size: 30px;
+    font-weight: 600;
+}
+nav .navList ul.nav
+{
+    /* border: 2px solid black; */
+    display: flex;
+    list-style: none;
+}
+nav .navList .nav > li
+{
+    /* border: 2px solid green; */
+    margin-left: 44px;
+    color: black;
+    position: relative;
+}
+
+
+/* Drop Down Starts */
+.drop
+{
+    position: absolute;
+}
+ul.drop
+{
+    /* border: 2px solid black; */
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    opacity: 0;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+/* .navList .d a[href="./dropDown.html"]:hover .drop */
+/* .fa i .fa:hover .drop */
+.d:hover .drop
+{
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+}
+
+ul.drop li
+{
+    margin: 16px 4px;
+}
+
+
+
+.drop .submenu
+{
+    /* border: 2px solid black; */
+    position: absolute;
+    /* left: 112%; */
+    left: 0;
+    top: 28px;
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    /* height: 0; */
+    /* width: 0; */
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    opacity: 0;
+    height: 225px;
+    left: 112%;
+}
+.dd:hover .submenu
+{
+    width: 200px;
+    opacity: 1;
+}
+/* .submenu li:hover .submenu
+{
+    left: 112%;
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+} */
+
+
+
+
+/* Drop Down Ends */
+
+
+
+
+
+
+
+
+
+
+
+nav .navList li i
+{
+    margin-left: 5px;
+}
+nav .navList li .home
+{
+    color: #006fbe;
+}
+
+nav .navList li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav .navList li a:hover
+{
+    color: #006fbe;
+}
+
+/* Navbar Ends */
+
+
+
+
+/* Slides Start */
+
+.slider
+{
+    margin-top: 90px;
+    width: 100%;
+    /* object-fit: cover; */
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation-name: bannerimage;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes bannerimage {
+    0%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg");}
+    50%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg");}
+    100%{background-image: url("https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg");}
+}
+/* Slides End */
+
+/* My and Family Section Starts */
+
+.myNdFamily
+{
+    /* border: 2px solid yellow; */
+    margin: 30px 100px;
+    line-height: 27px;
+    /* text-align: center; */
+}
+.myNdFamily h1
+{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 70px 0;
+}
+.myNdFamily h1::before
+{
+    content: "";
+    display: inline-block;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.453);
+    width: 112px;
+    position: relative;
+    top: 33px;
+    left: 150px;
+}
+.myNdFamily h1::after
+{
+    content: "";
+    display: inline-block;
+    border-bottom: 4px solid #006fbe;
+    width: 50px;
+    position: relative;
+    top: 34px;
+    right: 140px;
+}
+.myNdFamily .mnftitle
+{
+    text-align: center;
+    font-weight: 200;
+    font-size: 19px;
+    color: rgb(73, 71, 71);
+    margin: 32px 0;
+}
+
+.myNdFamily .mnfDiv
+{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+.myNdFamily .mnfDiv .mndfDivFir
+{
+    width: 49%;
+}
+.myNdFamily .mnfDiv .mndfDivFir img
+{
+    width: 100%;
+}
+
+.myNdFamily .mnfDiv .mdfDivSec
+{
+    /* border: 2px solid red; */
+    width: 49%;
+    font-weight: 200;
+    font-size: 19px;
+    color: rgb(73, 71, 71);
+}
+.myNdFamily .mnfDiv .mdfDivSec ul
+{
+    list-style: none;
+    margin: 20px 0;
+}
+.myNdFamily .mnfDiv .mdfDivSec ul li svg
+{
+    display: inline-block;
+    color: blue;
+    margin-right: 6px;
+}
+.myNdFamily .mnfDiv .mdfDivSec a
+{
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid #006fbe;
+    text-decoration: none;
+    color: rgb(0, 111, 190);
+    margin-top: 20px;
+    padding: 10px 38px;
+}
+.myNdFamily .mnfDiv .mdfDivSec a:hover
+{
+    color: white;
+    background-color: #006fbe;
+}
+/* My and Family Section Ends */
+
+
+/* Container Starts */
+main
+{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.container
+{
+    /* border: 2px solid red; */
+    margin: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .containerChild
+{
+    /* border: 2px solid green; */
+    height: 300px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+.container i
+{
+    font-size: 34px;
+}
+.container .icon
+{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+.container h3
+{
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: 100;       
+    margin-bottom: 35px;
+}
+.container h3::after
+{
+    content: "";
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #006fbe;
+    bottom: 0;
+    top: 15px;
+    left: 150px;
+}
+.container a
+{
+    text-decoration: none;
+    color: black;
+}
+.container p
+{
+    font-size: 16px;
+    color: rgb(73, 71, 71);
+}
+/* Container Ends */
+
+/* Recent Photos Starts */
+
+.recentPhotos
+{
+    /* border: 2px solid red; */
+    margin: 0px 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.rpImgdiv
+{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.recentPhotos img
+{
+    width: 18%;
+}
+.recentPhotos h1
+{
+    font-family: sans-serif;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 75%);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: -1;
+}
+.recentPhotos h1::before
+{
+    content: "";
+    display: inline-block;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.453);
+    width: 112px;
+    position: absolute;
+    bottom: -13px;
+    left: 45%;
+}
+.recentPhotos h1::after
+{
+    content: "";
+    display: inline-block;
+    border-bottom: 3px solid #006fbe;
+    width: 36px;
+    position: absolute;
+    bottom: -13px;
+    right: 49%;
+}
+.recentPhotos p
+{
+    font-size: 16px;
+    color: rgb(73, 71, 71);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Recent Photos Ends */
+
+/* Footer Starts */
+footer
+{
+    background-color: #24325d;
+    color: white;
+    height: 300px;
+    text-align: center;
+    padding: 30px ;
+}
+footer h3
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+footer .footerTitle
+{
+    font-style: italic;
+    margin-top: 19px;
+    margin-bottom: 41px;
+}
+footer .socialMediaIcons a
+{
+    background-color: #006fbe;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 3px;
+    display: inline-block;
+}
+footer .socialMediaIcons i
+{
+    color: white;
+}
+footer .copyright
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+footer .by a
+{
+    text-decoration: none;
+    color: #006fbe;
+}
+/* Footer Ends */
+
+
+/* Go to Top Button Code Starts */
+.gTop
+{
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    z-index: 996;
+    background: #006fbe;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.gTop i
+{
+    color: white;
+}
+/* Go to Top Button Code Ends */

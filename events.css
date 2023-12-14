@@ -1,0 +1,293 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html,body
+{
+    width: 100%;
+}
+
+/* Navbar Starts */
+
+nav
+{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 128px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0%;
+    box-shadow: 0px 2px 15px rgba(36, 50, 93, 0.06);
+}
+nav .logo a
+{
+    text-decoration: none;
+    color: #24325d;
+    font-size: 30px;
+    font-weight: 600;
+}
+nav .navList ul.nav
+{
+    /* border: 2px solid black; */
+    display: flex;
+    list-style: none;
+}
+nav .navList .nav > li
+{
+    /* border: 2px solid green; */
+    margin-left: 44px;
+    color: black;
+    position: relative;
+}
+
+
+/* Drop Down Starts */
+.drop
+{
+    position: absolute;
+}
+ul.drop
+{
+    /* border: 2px solid black; */
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    opacity: 0;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+/* .navList .d a[href="./dropDown.html"]:hover .drop */
+/* .fa i .fa:hover .drop */
+.d:hover .drop
+{
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+}
+
+ul.drop li
+{
+    margin: 16px 4px;
+}
+
+
+
+.drop .submenu
+{
+    /* border: 2px solid black; */
+    position: absolute;
+    /* left: 112%; */
+    left: 0;
+    top: 28px;
+    margin: 8px -23px;
+    padding: 5px 14px;
+    list-style: none;
+    background-color: white;
+    /* height: 0; */
+    /* width: 0; */
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    opacity: 0;
+    height: 225px;
+    left: 112%;
+}
+.dd:hover .submenu
+{
+    width: 200px;
+    opacity: 1;
+}
+/* .submenu li:hover .submenu
+{
+    left: 112%;
+    width: 200px;
+    height: 225px;
+    opacity: 1;
+} */
+
+
+
+
+/* Drop Down Ends */
+
+
+
+
+
+
+
+
+
+
+
+nav .navList li i
+{
+    margin-left: 5px;
+}
+nav .navList li .home
+{
+    color: #006fbe;
+}
+
+nav .navList li a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav .navList li a:hover
+{
+    color: #006fbe;
+}
+
+/* Navbar Ends */
+
+
+/* Header Starts */
+header
+{
+    margin: 77px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fb;
+    padding: 20px;
+}
+header h2
+{
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 7px;
+}
+header .insideHeader
+{
+    margin-right: 100px;
+    display: flex;
+    margin-top: 14px;
+}
+header .insideHeader a
+{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #006fbe;
+}
+/* Header Ends */
+
+/* Container Starts */
+.container
+{
+    margin: 30px 100px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container .div1
+{
+    /* border: 2px solid red; */
+    /* height: 532px; */
+    /* z-index: -1; */
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+    transition: all 0.5s;   
+}
+.container .div1 .img1
+{
+    transition: all 0.5s;
+}
+.container .div1:hover .img1
+{
+    transform: scale(1.1,1.1);
+}
+.container .div1:hover .img1container
+{
+    border-top: 5px solid #006fbe;
+}
+.container .div1 .img1container
+{
+    background-color: white;
+    height: 198px;
+    margin: 0% auto;
+    position: relative;
+    width: 86%;
+    top: -96px;
+    right: 11px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+.container .div1 .img1container h5
+{
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 21px;
+    color: #24325d;
+    margin-bottom: 20px;
+}
+.container .div1 .img1container .para1
+{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.container .div1 .img1container .para2
+{
+    color: #5e5e5e;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+/* Container Ends */
+
+
+/* Footer Starts */
+footer
+{
+    background-color: #24325d;
+    color: white;
+    height: 300px;
+    text-align: center;
+    padding: 30px ;
+}
+footer h3
+{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+footer .footerTitle
+{
+    font-style: italic;
+    margin-top: 19px;
+    margin-bottom: 41px;
+}
+footer .socialMediaIcons a
+{
+    background-color: #006fbe;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 3px;
+    display: inline-block;
+}
+footer .socialMediaIcons i
+{
+    color: white;
+}
+footer .copyright
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+footer .by a
+{
+    text-decoration: none;
+    color: #006fbe;
+}
+/* Footer Ends */
+
